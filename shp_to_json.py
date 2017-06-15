@@ -7,7 +7,7 @@ from epsg_codes import epsg
 parser = argparse.ArgumentParser()
 parser.add_argument("shapefile", help="path to the shapefile to be converted")
 parser.add_argument("geojsonfile", help="path to the output file")
-parser.add_argument("-c", "--crs", help="EPSG code for coordinate reference system of the source shapefile")
+parser.add_argument("-c", "--crs", help="EPSG code for coordinate reference system of the source shapefile. Default is 4326 for WGS84.")
 args = parser.parse_args()
 
 
